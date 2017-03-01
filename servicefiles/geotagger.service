@@ -1,0 +1,11 @@
+[Unit]
+Description=TTN Geotagger Node
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/geosender/ttnsender/main/geotagger
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

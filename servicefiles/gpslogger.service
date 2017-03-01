@@ -1,0 +1,11 @@
+[Unit]
+Description=TTN GPS Logger
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/geosender/gpslogger/gpsd_start.sh
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
